@@ -1,22 +1,11 @@
 {
-  "origem": "DuckDB extension tpch / dbgen",
-  "duckdb": "2.0.0",
+  "base": "TPC-H",
   "scale_factor": 0.01,
-  "schema_mysql": "n2_equipe10_tpch",
-  "observacao": "Base reduzida gerada para este projeto. Não é a imagem SF=1/PT-BR da turma.",
-  "gerado_em_utc": "2026-10-29T01:08:35.951393+00:00",
-  "tabelas": {
-    "region": {
-      "registros": 5,
-      "sha256_csv": "f209b7ef42b6d2c36a283071acf5dd0aa2819c2e0e77eb0d0e2602ea5ea883db"
-    },
-    "nation": {
-      "registros": 25,
-      "sha256_csv": "eb9008bc9df1c6aedb6a8fa78f104d71016f06262d9ee0d364d40d4e210f24a9"
-    },
-    "supplier": {
-      "registros": 100,
-      "sha256_csv": "0684fe37a46b12a521488e0738fe1062e9403905de00ce7bd6bba868bb00cc48"
-    }
+  "gerador": "Extensão tpch/dbgen do DuckDB, conforme DB L02, etapa 9.",
+  "escopo": "Totalidade de supplier, nation e region dessa escala.",
+  "registros": {
+    "supplier": 100,
+    "nation": 25,
+    "region": 5
   }
 }

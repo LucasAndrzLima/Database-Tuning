@@ -2,31 +2,31 @@
   "01_participacao_regiao": [
     {
       "fornecedores": 27,
-      "participacao_pct": 27.0,
+      "participacao_pct": 27,
       "regiao_id": 2,
       "regiao": "ASIA"
     },
     {
       "fornecedores": 21,
-      "participacao_pct": 21.0,
+      "participacao_pct": 21,
       "regiao_id": 0,
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 20,
-      "participacao_pct": 20.0,
+      "participacao_pct": 20,
       "regiao_id": 1,
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 20,
-      "participacao_pct": 20.0,
+      "participacao_pct": 20,
       "regiao_id": 3,
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 12,
-      "participacao_pct": 12.0,
+      "participacao_pct": 12,
       "regiao_id": 4,
       "regiao": "MIDDLE EAST"
     }
@@ -34,192 +34,178 @@
   "02_distribuicao_pais": [
     {
       "fornecedores": 8,
-      "participacao_pct": 8.0,
+      "participacao_pct": 8,
       "pais_id": 24,
       "pais": "UNITED STATES",
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 7,
-      "participacao_pct": 7.0,
+      "participacao_pct": 7,
       "pais_id": 16,
       "pais": "MOZAMBIQUE",
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 7,
-      "participacao_pct": 7.0,
+      "participacao_pct": 7,
       "pais_id": 18,
       "pais": "CHINA",
       "regiao": "ASIA"
     },
     {
       "fornecedores": 6,
-      "participacao_pct": 6.0,
+      "participacao_pct": 6,
       "pais_id": 4,
       "pais": "EGYPT",
       "regiao": "MIDDLE EAST"
     },
     {
       "fornecedores": 6,
-      "participacao_pct": 6.0,
+      "participacao_pct": 6,
       "pais_id": 14,
       "pais": "KENYA",
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 6,
-      "participacao_pct": 6.0,
+      "participacao_pct": 6,
       "pais_id": 21,
       "pais": "VIETNAM",
       "regiao": "ASIA"
     },
     {
       "fornecedores": 5,
-      "participacao_pct": 5.0,
+      "participacao_pct": 5,
       "pais_id": 7,
       "pais": "GERMANY",
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 5,
-      "participacao_pct": 5.0,
+      "participacao_pct": 5,
       "pais_id": 8,
       "pais": "INDIA",
       "regiao": "ASIA"
     },
     {
       "fornecedores": 5,
-      "participacao_pct": 5.0,
+      "participacao_pct": 5,
       "pais_id": 9,
       "pais": "INDONESIA",
       "regiao": "ASIA"
     },
     {
       "fornecedores": 5,
-      "participacao_pct": 5.0,
+      "participacao_pct": 5,
       "pais_id": 19,
       "pais": "ROMANIA",
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 5,
-      "participacao_pct": 5.0,
+      "participacao_pct": 5,
       "pais_id": 22,
       "pais": "RUSSIA",
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 4,
-      "participacao_pct": 4.0,
+      "participacao_pct": 4,
       "pais_id": 12,
       "pais": "JAPAN",
       "regiao": "ASIA"
     },
     {
       "fornecedores": 4,
-      "participacao_pct": 4.0,
+      "participacao_pct": 4,
       "pais_id": 17,
       "pais": "PERU",
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 3,
-      "participacao_pct": 3.0,
+      "participacao_pct": 3,
       "pais_id": 0,
       "pais": "ALGERIA",
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 3,
-      "participacao_pct": 3.0,
+      "participacao_pct": 3,
       "pais_id": 1,
       "pais": "ARGENTINA",
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 3,
-      "participacao_pct": 3.0,
+      "participacao_pct": 3,
       "pais_id": 3,
       "pais": "CANADA",
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 3,
-      "participacao_pct": 3.0,
+      "participacao_pct": 3,
       "pais_id": 5,
       "pais": "ETHIOPIA",
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 3,
-      "participacao_pct": 3.0,
+      "participacao_pct": 3,
       "pais_id": 23,
       "pais": "UNITED KINGDOM",
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 2,
-      "participacao_pct": 2.0,
+      "participacao_pct": 2,
       "pais_id": 2,
       "pais": "BRAZIL",
       "regiao": "AMERICA"
     },
     {
       "fornecedores": 2,
-      "participacao_pct": 2.0,
+      "participacao_pct": 2,
       "pais_id": 6,
       "pais": "FRANCE",
       "regiao": "EUROPE"
     },
     {
       "fornecedores": 2,
-      "participacao_pct": 2.0,
+      "participacao_pct": 2,
       "pais_id": 10,
       "pais": "IRAN",
       "regiao": "MIDDLE EAST"
     },
     {
       "fornecedores": 2,
-      "participacao_pct": 2.0,
+      "participacao_pct": 2,
       "pais_id": 11,
       "pais": "IRAQ",
       "regiao": "MIDDLE EAST"
     },
     {
       "fornecedores": 2,
-      "participacao_pct": 2.0,
+      "participacao_pct": 2,
       "pais_id": 15,
       "pais": "MOROCCO",
       "regiao": "AFRICA"
     },
     {
       "fornecedores": 1,
-      "participacao_pct": 1.0,
+      "participacao_pct": 1,
       "pais_id": 13,
       "pais": "JORDAN",
       "regiao": "MIDDLE EAST"
     },
     {
       "fornecedores": 1,
-      "participacao_pct": 1.0,
+      "participacao_pct": 1,
       "pais_id": 20,
       "pais": "SAUDI ARABIA",
       "regiao": "MIDDLE EAST"
-    }
-  ],
-  "03_resumo": [
-    {
-      "totalFornecedores": 100,
-      "paisesComFornecedores": 25,
-      "regioesComFornecedores": 5
-    }
-  ],
-  "04_concentracao_regional": [
-    {
-      "maiorParticipacaoPct": 27.0,
-      "hhiRegional": 2114.0,
-      "referenciaUniformeHHI": 2000.0
     }
   ]
 }

@@ -1,7 +1,12 @@
 .env
+.env.*
+!.env.example
 .venv/
 __pycache__/
+*.py[cod]
 .runtime/
-*.duckdb
+.vscode/
+.idea/
 *.log
 redash_estado_local.json
+.DS_Store

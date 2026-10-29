@@ -1,0 +1,144 @@
+name: n2-equipe10
+
+x-redash-env: &redash-env
+  REDASH_DATABASE_URL: postgresql://redash:redash_dev_only@postgres/redash
+  REDASH_REDIS_URL: redis://redis:6379/0
+  REDASH_COOKIE_SECRET: ${REDASH_COOKIE_SECRET:?Execute scripts/preparar.ps1}
+  REDASH_SECRET_KEY: ${REDASH_SECRET_KEY:?Execute scripts/preparar.ps1}
+  REDASH_WEB_WORKERS: "1"
+  REDASH_ENABLED_QUERY_RUNNERS: redash.query_runner.mongodb
+  REDASH_LOG_LEVEL: INFO
+
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-root}
+      MYSQL_DATABASE: tpch
+      MYSQL_INITDB_SKIP_TZINFO: "1"
+    ports:
+      - "127.0.0.1:3308:3306"
+    volumes:
+      - mysql_dados:/var/lib/mysql
+      - ./sql/00_base.sql:/docker-entrypoint-initdb.d/00_base.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysqladmin ping -h 127.0.0.1 -u root --silent"]
+      interval: 10s
+      timeout: 30s
+      retries: 60
+      start_period: 180s
+
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - "127.0.0.1:27018:27017"
+    volumes:
+      - mongo_dados:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 15s
+      timeout: 120s
+      retries: 20
+      start_period: 90s
+
+  postgres:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: redash
+      POSTGRES_PASSWORD: redash_dev_only
+      POSTGRES_DB: redash
+    volumes:
+      - redash_dados:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U redash -d redash"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+
+  server:
+    image: redash/redash:10.1.0.b50633
+    command: server
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      <<: *redash-env
+      GUNICORN_CMD_ARGS: --timeout=600
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_started}
+
+  worker:
+    image: redash/redash:10.1.0.b50633
+    command: worker
+    environment:
+      <<: *redash-env
+      QUEUES: queries,scheduled_queries,schemas,default
+      WORKERS_COUNT: "1"
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_started}
+
+  scheduler:
+    image: redash/redash:10.1.0.b50633
+    command: scheduler
+    environment: *redash-env
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_started}
+
+  # Serviços pontuais: só executam quando chamados com docker compose run.
+  extrair:
+    image: mysql:8.4
+    profiles: [etl]
+    entrypoint: ["bash", "/projeto/scripts/exportar.sh"]
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: "3306"
+      MYSQL_USER: root
+      MYSQL_PWD: ${MYSQL_PASSWORD:-root}
+      MYSQL_DATABASE: tpch
+    volumes:
+      - ./:/projeto
+    depends_on:
+      mysql: {condition: service_healthy}
+
+  carregar:
+    image: mongo:6.0
+    profiles: [etl]
+    entrypoint: ["mongosh", "mongodb://mongodb:27017/n2_equipe10", "--quiet", "--file", "/projeto/mongo/02_carregar.js"]
+    environment:
+      PROJETO_DIR: /projeto
+    volumes:
+      - ./:/projeto
+    depends_on:
+      mongodb: {condition: service_healthy}
+
+  validar:
+    image: mongo:6.0
+    profiles: [etl]
+    entrypoint: ["mongosh", "mongodb://mongodb:27017/n2_equipe10", "--quiet", "--file", "/projeto/mongo/03_validar.js"]
+    environment:
+      PROJETO_DIR: /projeto
+    volumes:
+      - ./:/projeto
+    depends_on:
+      mongodb: {condition: service_healthy}
+
+  analisar:
+    image: mongo:6.0
+    profiles: [etl]
+    entrypoint: ["mongosh", "mongodb://mongodb:27017/n2_equipe10", "--quiet", "--file", "/projeto/mongo/04_consultas.js"]
+    environment:
+      PROJETO_DIR: /projeto
+    volumes:
+      - ./:/projeto
+    depends_on:
+      mongodb: {condition: service_healthy}
+
+volumes:
+  mysql_dados:
+  mongo_dados:
+  redash_dados:

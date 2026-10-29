@@ -1,0 +1,161 @@
+{"tipo": "fornecedor", "dados": {"id": 1, "nome": "Supplier#000000001", "pais": "PERU", "paisId": 17, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 2, "nome": "Supplier#000000002", "pais": "ETHIOPIA", "paisId": 5, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 3, "nome": "Supplier#000000003", "pais": "ARGENTINA", "paisId": 1, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 4, "nome": "Supplier#000000004", "pais": "MOROCCO", "paisId": 15, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 5, "nome": "Supplier#000000005", "pais": "IRAQ", "paisId": 11, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 6, "nome": "Supplier#000000006", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 7, "nome": "Supplier#000000007", "pais": "UNITED KINGDOM", "paisId": 23, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 8, "nome": "Supplier#000000008", "pais": "PERU", "paisId": 17, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 9, "nome": "Supplier#000000009", "pais": "IRAN", "paisId": 10, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 10, "nome": "Supplier#000000010", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 11, "nome": "Supplier#000000011", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 12, "nome": "Supplier#000000012", "pais": "INDIA", "paisId": 8, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 13, "nome": "Supplier#000000013", "pais": "CANADA", "paisId": 3, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 14, "nome": "Supplier#000000014", "pais": "MOROCCO", "paisId": 15, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 15, "nome": "Supplier#000000015", "pais": "INDIA", "paisId": 8, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 16, "nome": "Supplier#000000016", "pais": "RUSSIA", "paisId": 22, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 17, "nome": "Supplier#000000017", "pais": "ROMANIA", "paisId": 19, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 18, "nome": "Supplier#000000018", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 19, "nome": "Supplier#000000019", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 20, "nome": "Supplier#000000020", "pais": "CANADA", "paisId": 3, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 21, "nome": "Supplier#000000021", "pais": "BRAZIL", "paisId": 2, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 22, "nome": "Supplier#000000022", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 23, "nome": "Supplier#000000023", "pais": "INDONESIA", "paisId": 9, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 24, "nome": "Supplier#000000024", "pais": "ALGERIA", "paisId": 0, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 25, "nome": "Supplier#000000025", "pais": "RUSSIA", "paisId": 22, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 26, "nome": "Supplier#000000026", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 27, "nome": "Supplier#000000027", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 28, "nome": "Supplier#000000028", "pais": "ALGERIA", "paisId": 0, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 29, "nome": "Supplier#000000029", "pais": "ARGENTINA", "paisId": 1, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 30, "nome": "Supplier#000000030", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 31, "nome": "Supplier#000000031", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 32, "nome": "Supplier#000000032", "pais": "UNITED KINGDOM", "paisId": 23, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 33, "nome": "Supplier#000000033", "pais": "GERMANY", "paisId": 7, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 34, "nome": "Supplier#000000034", "pais": "IRAN", "paisId": 10, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 35, "nome": "Supplier#000000035", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 36, "nome": "Supplier#000000036", "pais": "JORDAN", "paisId": 13, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 37, "nome": "Supplier#000000037", "pais": "ALGERIA", "paisId": 0, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 38, "nome": "Supplier#000000038", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 39, "nome": "Supplier#000000039", "pais": "INDIA", "paisId": 8, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 40, "nome": "Supplier#000000040", "pais": "RUSSIA", "paisId": 22, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 41, "nome": "Supplier#000000041", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 42, "nome": "Supplier#000000042", "pais": "RUSSIA", "paisId": 22, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 43, "nome": "Supplier#000000043", "pais": "JAPAN", "paisId": 12, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 44, "nome": "Supplier#000000044", "pais": "GERMANY", "paisId": 7, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 45, "nome": "Supplier#000000045", "pais": "INDONESIA", "paisId": 9, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 46, "nome": "Supplier#000000046", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 47, "nome": "Supplier#000000047", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 48, "nome": "Supplier#000000048", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 49, "nome": "Supplier#000000049", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 50, "nome": "Supplier#000000050", "pais": "INDONESIA", "paisId": 9, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 51, "nome": "Supplier#000000051", "pais": "INDONESIA", "paisId": 9, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 52, "nome": "Supplier#000000052", "pais": "ROMANIA", "paisId": 19, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 53, "nome": "Supplier#000000053", "pais": "GERMANY", "paisId": 7, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 54, "nome": "Supplier#000000054", "pais": "JAPAN", "paisId": 12, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 55, "nome": "Supplier#000000055", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 56, "nome": "Supplier#000000056", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 57, "nome": "Supplier#000000057", "pais": "PERU", "paisId": 17, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 58, "nome": "Supplier#000000058", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 59, "nome": "Supplier#000000059", "pais": "PERU", "paisId": 17, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 60, "nome": "Supplier#000000060", "pais": "INDIA", "paisId": 8, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 61, "nome": "Supplier#000000061", "pais": "INDIA", "paisId": 8, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 62, "nome": "Supplier#000000062", "pais": "ROMANIA", "paisId": 19, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 63, "nome": "Supplier#000000063", "pais": "ETHIOPIA", "paisId": 5, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 64, "nome": "Supplier#000000064", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 65, "nome": "Supplier#000000065", "pais": "RUSSIA", "paisId": 22, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 66, "nome": "Supplier#000000066", "pais": "UNITED KINGDOM", "paisId": 23, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 67, "nome": "Supplier#000000067", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 68, "nome": "Supplier#000000068", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 69, "nome": "Supplier#000000069", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 70, "nome": "Supplier#000000070", "pais": "FRANCE", "paisId": 6, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 71, "nome": "Supplier#000000071", "pais": "ARGENTINA", "paisId": 1, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 72, "nome": "Supplier#000000072", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 73, "nome": "Supplier#000000073", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 74, "nome": "Supplier#000000074", "pais": "SAUDI ARABIA", "paisId": 20, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 75, "nome": "Supplier#000000075", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 76, "nome": "Supplier#000000076", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 77, "nome": "Supplier#000000077", "pais": "GERMANY", "paisId": 7, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 78, "nome": "Supplier#000000078", "pais": "ETHIOPIA", "paisId": 5, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 79, "nome": "Supplier#000000079", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 80, "nome": "Supplier#000000080", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 81, "nome": "Supplier#000000081", "pais": "JAPAN", "paisId": 12, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 82, "nome": "Supplier#000000082", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 83, "nome": "Supplier#000000083", "pais": "KENYA", "paisId": 14, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 84, "nome": "Supplier#000000084", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 85, "nome": "Supplier#000000085", "pais": "GERMANY", "paisId": 7, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 86, "nome": "Supplier#000000086", "pais": "ROMANIA", "paisId": 19, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 87, "nome": "Supplier#000000087", "pais": "UNITED STATES", "paisId": 24, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 88, "nome": "Supplier#000000088", "pais": "IRAQ", "paisId": 11, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 89, "nome": "Supplier#000000089", "pais": "INDONESIA", "paisId": 9, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 90, "nome": "Supplier#000000090", "pais": "FRANCE", "paisId": 6, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 91, "nome": "Supplier#000000091", "pais": "CANADA", "paisId": 3, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 92, "nome": "Supplier#000000092", "pais": "BRAZIL", "paisId": 2, "regiao": "AMERICA", "regiaoId": 1}}
+{"tipo": "fornecedor", "dados": {"id": 93, "nome": "Supplier#000000093", "pais": "MOZAMBIQUE", "paisId": 16, "regiao": "AFRICA", "regiaoId": 0}}
+{"tipo": "fornecedor", "dados": {"id": 94, "nome": "Supplier#000000094", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 95, "nome": "Supplier#000000095", "pais": "ROMANIA", "paisId": 19, "regiao": "EUROPE", "regiaoId": 3}}
+{"tipo": "fornecedor", "dados": {"id": 96, "nome": "Supplier#000000096", "pais": "JAPAN", "paisId": 12, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 97, "nome": "Supplier#000000097", "pais": "EGYPT", "paisId": 4, "regiao": "MIDDLE EAST", "regiaoId": 4}}
+{"tipo": "fornecedor", "dados": {"id": 98, "nome": "Supplier#000000098", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 99, "nome": "Supplier#000000099", "pais": "CHINA", "paisId": 18, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "fornecedor", "dados": {"id": 100, "nome": "Supplier#000000100", "pais": "VIETNAM", "paisId": 21, "regiao": "ASIA", "regiaoId": 2}}
+{"tipo": "regiao", "dados": {"_id": 0, "nome": "AFRICA"}}
+{"tipo": "regiao", "dados": {"_id": 1, "nome": "AMERICA"}}
+{"tipo": "regiao", "dados": {"_id": 2, "nome": "ASIA"}}
+{"tipo": "regiao", "dados": {"_id": 3, "nome": "EUROPE"}}
+{"tipo": "regiao", "dados": {"_id": 4, "nome": "MIDDLE EAST"}}
+{"tipo": "pais", "dados": {"_id": 0, "nome": "ALGERIA", "regiao": {"id": 0, "nome": "AFRICA"}}}
+{"tipo": "pais", "dados": {"_id": 1, "nome": "ARGENTINA", "regiao": {"id": 1, "nome": "AMERICA"}}}
+{"tipo": "pais", "dados": {"_id": 2, "nome": "BRAZIL", "regiao": {"id": 1, "nome": "AMERICA"}}}
+{"tipo": "pais", "dados": {"_id": 3, "nome": "CANADA", "regiao": {"id": 1, "nome": "AMERICA"}}}
+{"tipo": "pais", "dados": {"_id": 4, "nome": "EGYPT", "regiao": {"id": 4, "nome": "MIDDLE EAST"}}}
+{"tipo": "pais", "dados": {"_id": 5, "nome": "ETHIOPIA", "regiao": {"id": 0, "nome": "AFRICA"}}}
+{"tipo": "pais", "dados": {"_id": 6, "nome": "FRANCE", "regiao": {"id": 3, "nome": "EUROPE"}}}
+{"tipo": "pais", "dados": {"_id": 7, "nome": "GERMANY", "regiao": {"id": 3, "nome": "EUROPE"}}}
+{"tipo": "pais", "dados": {"_id": 8, "nome": "INDIA", "regiao": {"id": 2, "nome": "ASIA"}}}
+{"tipo": "pais", "dados": {"_id": 9, "nome": "INDONESIA", "regiao": {"id": 2, "nome": "ASIA"}}}
+{"tipo": "pais", "dados": {"_id": 10, "nome": "IRAN", "regiao": {"id": 4, "nome": "MIDDLE EAST"}}}
+{"tipo": "pais", "dados": {"_id": 11, "nome": "IRAQ", "regiao": {"id": 4, "nome": "MIDDLE EAST"}}}
+{"tipo": "pais", "dados": {"_id": 12, "nome": "JAPAN", "regiao": {"id": 2, "nome": "ASIA"}}}
+{"tipo": "pais", "dados": {"_id": 13, "nome": "JORDAN", "regiao": {"id": 4, "nome": "MIDDLE EAST"}}}
+{"tipo": "pais", "dados": {"_id": 14, "nome": "KENYA", "regiao": {"id": 0, "nome": "AFRICA"}}}
+{"tipo": "pais", "dados": {"_id": 15, "nome": "MOROCCO", "regiao": {"id": 0, "nome": "AFRICA"}}}
+{"tipo": "pais", "dados": {"_id": 16, "nome": "MOZAMBIQUE", "regiao": {"id": 0, "nome": "AFRICA"}}}
+{"tipo": "pais", "dados": {"_id": 17, "nome": "PERU", "regiao": {"id": 1, "nome": "AMERICA"}}}
+{"tipo": "pais", "dados": {"_id": 18, "nome": "CHINA", "regiao": {"id": 2, "nome": "ASIA"}}}
+{"tipo": "pais", "dados": {"_id": 19, "nome": "ROMANIA", "regiao": {"id": 3, "nome": "EUROPE"}}}
+{"tipo": "pais", "dados": {"_id": 20, "nome": "SAUDI ARABIA", "regiao": {"id": 4, "nome": "MIDDLE EAST"}}}
+{"tipo": "pais", "dados": {"_id": 21, "nome": "VIETNAM", "regiao": {"id": 2, "nome": "ASIA"}}}
+{"tipo": "pais", "dados": {"_id": 22, "nome": "RUSSIA", "regiao": {"id": 3, "nome": "EUROPE"}}}
+{"tipo": "pais", "dados": {"_id": 23, "nome": "UNITED KINGDOM", "regiao": {"id": 3, "nome": "EUROPE"}}}
+{"tipo": "pais", "dados": {"_id": 24, "nome": "UNITED STATES", "regiao": {"id": 1, "nome": "AMERICA"}}}
+{"tipo": "indicador_regiao", "dados": {"regiao": "AFRICA", "regiao_id": 0, "fornecedores": 21, "participacao_pct": 21.0000}}
+{"tipo": "indicador_regiao", "dados": {"regiao": "AMERICA", "regiao_id": 1, "fornecedores": 20, "participacao_pct": 20.0000}}
+{"tipo": "indicador_regiao", "dados": {"regiao": "ASIA", "regiao_id": 2, "fornecedores": 27, "participacao_pct": 27.0000}}
+{"tipo": "indicador_regiao", "dados": {"regiao": "EUROPE", "regiao_id": 3, "fornecedores": 20, "participacao_pct": 20.0000}}
+{"tipo": "indicador_regiao", "dados": {"regiao": "MIDDLE EAST", "regiao_id": 4, "fornecedores": 12, "participacao_pct": 12.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "ALGERIA", "regiao": "AFRICA", "pais_id": 0, "fornecedores": 3, "participacao_pct": 3.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "ARGENTINA", "regiao": "AMERICA", "pais_id": 1, "fornecedores": 3, "participacao_pct": 3.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "BRAZIL", "regiao": "AMERICA", "pais_id": 2, "fornecedores": 2, "participacao_pct": 2.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "CANADA", "regiao": "AMERICA", "pais_id": 3, "fornecedores": 3, "participacao_pct": 3.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "EGYPT", "regiao": "MIDDLE EAST", "pais_id": 4, "fornecedores": 6, "participacao_pct": 6.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "ETHIOPIA", "regiao": "AFRICA", "pais_id": 5, "fornecedores": 3, "participacao_pct": 3.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "FRANCE", "regiao": "EUROPE", "pais_id": 6, "fornecedores": 2, "participacao_pct": 2.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "GERMANY", "regiao": "EUROPE", "pais_id": 7, "fornecedores": 5, "participacao_pct": 5.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "INDIA", "regiao": "ASIA", "pais_id": 8, "fornecedores": 5, "participacao_pct": 5.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "INDONESIA", "regiao": "ASIA", "pais_id": 9, "fornecedores": 5, "participacao_pct": 5.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "IRAN", "regiao": "MIDDLE EAST", "pais_id": 10, "fornecedores": 2, "participacao_pct": 2.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "IRAQ", "regiao": "MIDDLE EAST", "pais_id": 11, "fornecedores": 2, "participacao_pct": 2.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "JAPAN", "regiao": "ASIA", "pais_id": 12, "fornecedores": 4, "participacao_pct": 4.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "JORDAN", "regiao": "MIDDLE EAST", "pais_id": 13, "fornecedores": 1, "participacao_pct": 1.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "KENYA", "regiao": "AFRICA", "pais_id": 14, "fornecedores": 6, "participacao_pct": 6.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "MOROCCO", "regiao": "AFRICA", "pais_id": 15, "fornecedores": 2, "participacao_pct": 2.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "MOZAMBIQUE", "regiao": "AFRICA", "pais_id": 16, "fornecedores": 7, "participacao_pct": 7.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "PERU", "regiao": "AMERICA", "pais_id": 17, "fornecedores": 4, "participacao_pct": 4.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "CHINA", "regiao": "ASIA", "pais_id": 18, "fornecedores": 7, "participacao_pct": 7.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "ROMANIA", "regiao": "EUROPE", "pais_id": 19, "fornecedores": 5, "participacao_pct": 5.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "SAUDI ARABIA", "regiao": "MIDDLE EAST", "pais_id": 20, "fornecedores": 1, "participacao_pct": 1.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "VIETNAM", "regiao": "ASIA", "pais_id": 21, "fornecedores": 6, "participacao_pct": 6.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "RUSSIA", "regiao": "EUROPE", "pais_id": 22, "fornecedores": 5, "participacao_pct": 5.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "UNITED KINGDOM", "regiao": "EUROPE", "pais_id": 23, "fornecedores": 3, "participacao_pct": 3.0000}}
+{"tipo": "indicador_pais", "dados": {"pais": "UNITED STATES", "regiao": "AMERICA", "pais_id": 24, "fornecedores": 8, "participacao_pct": 8.0000}}
+{"tipo": "controle", "dados": {"paises": 25, "schema": "tpch", "regioes": 5, "fornecedores": 100, "versao_mysql": "8.4.13", "extraido_em_utc": "2026-10-29 05:59:39.925000", "paises_sem_regiao": 0, "fornecedores_sem_pais": 0}}

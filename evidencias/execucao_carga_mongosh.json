@@ -1,0 +1,21 @@
+{
+  "cargaId": "6ae2e1108357cf649f9df8a3",
+  "origem": {
+    "paises": 25,
+    "schema": "tpch",
+    "regioes": 5,
+    "fornecedores": 100,
+    "versao_mysql": "8.4.13",
+    "extraido_em_utc": "2026-10-29 05:59:39.925000",
+    "paises_sem_regiao": 0,
+    "fornecedores_sem_pais": 0
+  },
+  "carregadoEm": {
+    "$date": "2026-10-29T06:00:54.748Z"
+  },
+  "executor": "mongosh / JavaScript",
+  "banco": "n2_equipe10",
+  "fornecedores": 100,
+  "paises": 25,
+  "regioes": 5
+}
