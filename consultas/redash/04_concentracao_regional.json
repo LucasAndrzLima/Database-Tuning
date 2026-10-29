@@ -1,0 +1,103 @@
+{
+  "collection": "fato_fornecedores",
+  "aggregate": [
+    {
+      "$group": {
+        "_id": {
+          "regiao_id": "$geografia.regiaoId",
+          "regiao": "$geografia.regiao"
+        },
+        "fornecedores": {
+          "$sum": "$quantidadeFornecedores"
+        }
+      }
+    },
+    {
+      "$unionWith": {
+        "coll": "dim_regiao",
+        "pipeline": [
+          {
+            "$project": {
+              "_id": {
+                "regiao_id": "$_id",
+                "regiao": "$nome"
+              },
+              "fornecedores": {
+                "$literal": 0
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "$group": {
+        "_id": "$_id",
+        "fornecedores": {
+          "$sum": "$fornecedores"
+        }
+      }
+    },
+    {
+      "$group": {
+        "_id": null,
+        "total": {
+          "$sum": "$fornecedores"
+        },
+        "regioesCadastradas": {
+          "$sum": 1
+        },
+        "maximo": {
+          "$max": "$fornecedores"
+        },
+        "somaQuadrados": {
+          "$sum": {
+            "$multiply": [
+              "$fornecedores",
+              "$fornecedores"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$project": {
+        "_id": 0,
+        "maiorParticipacaoPct": {
+          "$multiply": [
+            100,
+            {
+              "$divide": [
+                "$maximo",
+                "$total"
+              ]
+            }
+          ]
+        },
+        "hhiRegional": {
+          "$divide": [
+            {
+              "$multiply": [
+                10000,
+                "$somaQuadrados"
+              ]
+            },
+            {
+              "$multiply": [
+                "$total",
+                "$total"
+              ]
+            }
+          ]
+        },
+        "referenciaUniformeHHI": {
+          "$divide": [
+            10000,
+            "$regioesCadastradas"
+          ]
+        }
+      }
+    }
+  ],
+  "allowDiskUse": true
+}

@@ -1,0 +1,6 @@
+{
+  "pymysql": "1.2.3",
+  "mongo_server": "9.0.4",
+  "schema_mysql": "n2_equipe10_tpch",
+  "ambiente": "Execução real, sem mocks"
+}

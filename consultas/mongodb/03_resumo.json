@@ -1,0 +1,28 @@
+[
+  {
+    "$group": {
+      "_id": null,
+      "totalFornecedores": {
+        "$sum": 1
+      },
+      "paises": {
+        "$addToSet": "$geografia.paisId"
+      },
+      "regioes": {
+        "$addToSet": "$geografia.regiaoId"
+      }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "totalFornecedores": 1,
+      "paisesComFornecedores": {
+        "$size": "$paises"
+      },
+      "regioesComFornecedores": {
+        "$size": "$regioes"
+      }
+    }
+  }
+]

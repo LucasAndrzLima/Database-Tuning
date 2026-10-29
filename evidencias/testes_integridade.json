@@ -1,0 +1,7 @@
+{
+  "mongo_real": true,
+  "regiao_sem_fornecedor_preservada": true,
+  "duplicata_rejeitada": true,
+  "geografia_orfa_rejeitada": true,
+  "denominador_zero_sem_divisao": true
+}

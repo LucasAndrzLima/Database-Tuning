@@ -1,0 +1,18 @@
+erDiagram
+    DIM_FORNECEDOR ||--o{ FATO_CADASTRO_FORNECEDOR : identifica
+    DIM_GEOGRAFIA ||--o{ FATO_CADASTRO_FORNECEDOR : localiza
+    FATO_CADASTRO_FORNECEDOR {
+        int fornecedor_id_PK_FK
+        int pais_id_FK
+        int quantidade_fornecedores
+    }
+    DIM_FORNECEDOR {
+        int fornecedor_id_PK
+        string nome
+    }
+    DIM_GEOGRAFIA {
+        int pais_id_PK
+        string pais
+        int regiao_id
+        string regiao
+    }

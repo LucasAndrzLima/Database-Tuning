@@ -1,0 +1,499 @@
+{
+  "regiao_id_filtrada": 0,
+  "repeticoes": 7,
+  "equivalencia_ids": true,
+  "mysql_plano_estimado": {
+    "EXPLAIN": "{\n  \"query_block\": {\n    \"select_id\": 1,\n    \"cost_info\": {\n      \"query_cost\": \"45.25\"\n    },\n    \"ordering_operation\": {\n      \"using_filesort\": false,\n      \"nested_loop\": [\n        {\n          \"table\": {\n            \"table_name\": \"s\",\n            \"access_type\": \"index\",\n            \"possible_keys\": [\n              \"s_nationkey\"\n            ],\n            \"key\": \"PRIMARY\",\n            \"used_key_parts\": [\n              \"s_suppkey\"\n            ],\n            \"key_length\": \"4\",\n            \"rows_examined_per_scan\": 100,\n            \"rows_produced_per_join\": 100,\n            \"filtered\": \"100.00\",\n            \"cost_info\": {\n              \"read_cost\": \"0.25\",\n              \"eval_cost\": \"10.00\",\n              \"prefix_cost\": \"10.25\",\n              \"data_read_per_join\": \"72K\"\n            },\n            \"used_columns\": [\n              \"s_suppkey\",\n              \"s_nationkey\"\n            ]\n          }\n        },\n        {\n          \"table\": {\n            \"table_name\": \"n\",\n            \"access_type\": \"eq_ref\",\n            \"possible_keys\": [\n              \"PRIMARY\",\n              \"n_regionkey\"\n            ],\n            \"key\": \"PRIMARY\",\n            \"used_key_parts\": [\n              \"n_nationkey\"\n            ],\n            \"key_length\": \"4\",\n            \"ref\": [\n              \"n2_equipe10_tpch.s.s_nationkey\"\n            ],\n            \"rows_examined_per_scan\": 1,\n            \"rows_produced_per_join\": 20,\n            \"filtered\": \"20.00\",\n            \"cost_info\": {\n              \"read_cost\": \"25.00\",\n              \"eval_cost\": \"2.00\",\n              \"prefix_cost\": \"45.25\",\n              \"data_read_per_join\": \"14K\"\n            },\n            \"used_columns\": [\n              \"n_nationkey\",\n              \"n_regionkey\"\n            ],\n            \"attached_condition\": \"(`n2_equipe10_tpch`.`n`.`n_regionkey` = 0)\"\n          }\n        }\n      ]\n    }\n  }\n}"
+  },
+  "mysql_plano_executado": [
+    {
+      "EXPLAIN": "-> Nested loop inner join  (cost=45.2 rows=20) (actual time=0.069..0.441 rows=21 loops=1)\n    -> Index scan on s using PRIMARY  (cost=10.2 rows=100) (actual time=0.0386..0.129 rows=100 loops=1)\n    -> Filter: (n.n_regionkey = 0)  (cost=0.25 rows=0.2) (actual time=0.00282..0.00286 rows=0.21 loops=100)\n        -> Single-row index lookup on n using PRIMARY (n_nationkey=s.s_nationkey)  (cost=0.25 rows=1) (actual time=0.00239..0.00245 rows=1 loops=100)\n"
+    }
+  ],
+  "mysql_amostras_ms": [
+    1.0657000020728447,
+    1.1713999992934987,
+    1.0438999997859355,
+    0.9809000002860557,
+    0.9040000004461035,
+    0.9759999993548263,
+    0.9104999990086071
+  ],
+  "mysql_mediana_ms": 0.9809000002860557,
+  "mongodb_tempos": {
+    "natural": {
+      "amostras_ms": [
+        0.8859999979904387,
+        0.7282000005943701,
+        0.6123000021034386,
+        0.6061999993107747,
+        0.6600999986403622,
+        0.6087000001571141,
+        0.7646999983990099
+      ],
+      "mediana_ms": 0.6600999986403622
+    },
+    "indice": {
+      "amostras_ms": [
+        0.9648000013839919,
+        1.112200003262842,
+        0.6923000000824686,
+        0.7129999976314139,
+        0.6828000005043577,
+        0.7061999967845622,
+        0.5617999995592982
+      ],
+      "mediana_ms": 0.7061999967845622
+    }
+  },
+  "mongodb_explain": {
+    "natural": {
+      "explainVersion": "1",
+      "queryPlanner": {
+        "namespace": "n2_equipe10.fato_fornecedores",
+        "parsedQuery": {
+          "geografia.regiaoId": {
+            "$eq": 0
+          }
+        },
+        "indexFilterSet": false,
+        "queryHash": "237B7F47",
+        "planCacheShapeHash": "237B7F47",
+        "planCacheKey": "4AA80C7D",
+        "optimizationTimeMillis": 1,
+        "optimizationTimeMicros": 1384,
+        "maxIndexedOrSolutionsReached": false,
+        "maxIndexedAndSolutionsReached": false,
+        "maxScansToExplodeReached": false,
+        "prunedSimilarIndexes": false,
+        "winningPlan": {
+          "isCached": false,
+          "stage": "SORT",
+          "sortPattern": {
+            "_id": 1
+          },
+          "memLimit": 104857600,
+          "type": "simple",
+          "inputStage": {
+            "stage": "PROJECTION_SIMPLE",
+            "transformBy": {
+              "_id": 1
+            },
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "geografia.regiaoId": {
+                  "$eq": 0
+                }
+              },
+              "nss": "n2_equipe10.fato_fornecedores",
+              "direction": "forward"
+            }
+          }
+        },
+        "rejectedPlans": []
+      },
+      "executionStats": {
+        "executionSuccess": true,
+        "nReturned": 21,
+        "executionTimeMillis": 4,
+        "executionTimeMicros": 4306,
+        "totalKeysExamined": 0,
+        "totalDocsExamined": 100,
+        "executionStages": {
+          "isCached": false,
+          "stage": "SORT",
+          "nReturned": 21,
+          "executionTimeMillisEstimate": 2,
+          "works": 123,
+          "advanced": 21,
+          "needTime": 101,
+          "needYield": 0,
+          "saveState": 0,
+          "restoreState": 0,
+          "isEOF": 1,
+          "sortPattern": {
+            "_id": 1
+          },
+          "memLimit": 104857600,
+          "type": "simple",
+          "totalDataSizeSorted": 966,
+          "usedDisk": false,
+          "spills": 0,
+          "spilledRecords": 0,
+          "spilledBytes": 0,
+          "spilledDataStorageSize": 0,
+          "peakTrackedMemBytes": 966,
+          "inputStage": {
+            "stage": "PROJECTION_SIMPLE",
+            "nReturned": 21,
+            "executionTimeMillisEstimate": 0,
+            "works": 101,
+            "advanced": 21,
+            "needTime": 79,
+            "needYield": 0,
+            "saveState": 0,
+            "restoreState": 0,
+            "isEOF": 1,
+            "transformBy": {
+              "_id": 1
+            },
+            "inputStage": {
+              "stage": "COLLSCAN",
+              "filter": {
+                "geografia.regiaoId": {
+                  "$eq": 0
+                }
+              },
+              "nReturned": 21,
+              "executionTimeMillisEstimate": 0,
+              "works": 101,
+              "advanced": 21,
+              "needTime": 79,
+              "needYield": 0,
+              "saveState": 0,
+              "restoreState": 0,
+              "isEOF": 1,
+              "nss": "n2_equipe10.fato_fornecedores",
+              "direction": "forward",
+              "docsExamined": 100,
+              "seeks": 0
+            }
+          }
+        }
+      },
+      "queryShapeHash": "AAFEECB043007F0530084FCEC91B8291F111274C37BAF57252BD555139533DD1",
+      "peakTrackedMemBytes": 966,
+      "command": {
+        "find": "fato_fornecedores",
+        "filter": {
+          "geografia.regiaoId": 0
+        },
+        "projection": {
+          "_id": 1
+        },
+        "sort": {
+          "_id": 1
+        },
+        "hint": {
+          "$natural": 1
+        },
+        "$db": "n2_equipe10"
+      },
+      "serverInfo": {
+        "host": "LAPTOP-ATT32S7A",
+        "port": 27017,
+        "version": "9.0.4",
+        "gitVersion": "64ade602b836c9adeffba7fa038c887ffab56196"
+      },
+      "serverParameters": {
+        "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+        "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+        "internalQueryProhibitBlockingMergeOnMongoS": 0,
+        "internalQueryFrameworkControl": "trySbeRestricted",
+        "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+      },
+      "ok": 1.0
+    },
+    "indice": {
+      "explainVersion": "1",
+      "queryPlanner": {
+        "namespace": "n2_equipe10.fato_fornecedores",
+        "parsedQuery": {
+          "geografia.regiaoId": {
+            "$eq": 0
+          }
+        },
+        "indexFilterSet": false,
+        "queryHash": "237B7F47",
+        "planCacheShapeHash": "237B7F47",
+        "planCacheKey": "4AA80C7D",
+        "optimizationTimeMillis": 3,
+        "optimizationTimeMicros": 3428,
+        "maxIndexedOrSolutionsReached": false,
+        "maxIndexedAndSolutionsReached": false,
+        "maxScansToExplodeReached": false,
+        "prunedSimilarIndexes": false,
+        "winningPlan": {
+          "isCached": false,
+          "stage": "PROJECTION_COVERED",
+          "transformBy": {
+            "_id": 1
+          },
+          "inputStage": {
+            "stage": "IXSCAN",
+            "nss": "n2_equipe10.fato_fornecedores",
+            "keyPattern": {
+              "geografia.regiaoId": 1,
+              "_id": 1
+            },
+            "indexName": "ix_regiao_fornecedor",
+            "isMultiKey": false,
+            "multiKeyPaths": {
+              "geografia.regiaoId": [],
+              "_id": []
+            },
+            "isUnique": false,
+            "isSparse": false,
+            "isPartial": false,
+            "indexVersion": 2,
+            "direction": "forward",
+            "indexBounds": {
+              "geografia.regiaoId": [
+                "[0, 0]"
+              ],
+              "_id": [
+                "[MinKey, MaxKey]"
+              ]
+            }
+          }
+        },
+        "rejectedPlans": []
+      },
+      "executionStats": {
+        "executionSuccess": true,
+        "nReturned": 21,
+        "executionTimeMillis": 15,
+        "executionTimeMicros": 15115,
+        "totalKeysExamined": 21,
+        "totalDocsExamined": 0,
+        "executionStages": {
+          "isCached": false,
+          "stage": "PROJECTION_COVERED",
+          "nReturned": 21,
+          "executionTimeMillisEstimate": 10,
+          "works": 22,
+          "advanced": 21,
+          "needTime": 0,
+          "needYield": 0,
+          "saveState": 0,
+          "restoreState": 0,
+          "isEOF": 1,
+          "transformBy": {
+            "_id": 1
+          },
+          "inputStage": {
+            "stage": "IXSCAN",
+            "nReturned": 21,
+            "executionTimeMillisEstimate": 10,
+            "works": 22,
+            "advanced": 21,
+            "needTime": 0,
+            "needYield": 0,
+            "saveState": 0,
+            "restoreState": 0,
+            "isEOF": 1,
+            "nss": "n2_equipe10.fato_fornecedores",
+            "keyPattern": {
+              "geografia.regiaoId": 1,
+              "_id": 1
+            },
+            "indexName": "ix_regiao_fornecedor",
+            "isMultiKey": false,
+            "multiKeyPaths": {
+              "geografia.regiaoId": [],
+              "_id": []
+            },
+            "isUnique": false,
+            "isSparse": false,
+            "isPartial": false,
+            "indexVersion": 2,
+            "direction": "forward",
+            "indexBounds": {
+              "geografia.regiaoId": [
+                "[0, 0]"
+              ],
+              "_id": [
+                "[MinKey, MaxKey]"
+              ]
+            },
+            "keysExamined": 21,
+            "seeks": 1,
+            "dupsTested": 0,
+            "dupsDropped": 0,
+            "peakTrackedMemBytes": 0
+          }
+        }
+      },
+      "queryShapeHash": "AAFEECB043007F0530084FCEC91B8291F111274C37BAF57252BD555139533DD1",
+      "command": {
+        "find": "fato_fornecedores",
+        "filter": {
+          "geografia.regiaoId": 0
+        },
+        "projection": {
+          "_id": 1
+        },
+        "sort": {
+          "_id": 1
+        },
+        "hint": "ix_regiao_fornecedor",
+        "$db": "n2_equipe10"
+      },
+      "serverInfo": {
+        "host": "LAPTOP-ATT32S7A",
+        "port": 27017,
+        "version": "9.0.4",
+        "gitVersion": "64ade602b836c9adeffba7fa038c887ffab56196"
+      },
+      "serverParameters": {
+        "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+        "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+        "internalQueryProhibitBlockingMergeOnMongoS": 0,
+        "internalQueryFrameworkControl": "trySbeRestricted",
+        "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+      },
+      "ok": 1.0
+    },
+    "automatico": {
+      "explainVersion": "1",
+      "queryPlanner": {
+        "namespace": "n2_equipe10.fato_fornecedores",
+        "parsedQuery": {
+          "geografia.regiaoId": {
+            "$eq": 0
+          }
+        },
+        "indexFilterSet": false,
+        "queryHash": "237B7F47",
+        "planCacheShapeHash": "237B7F47",
+        "planCacheKey": "4AA80C7D",
+        "optimizationTimeMillis": 0,
+        "optimizationTimeMicros": 175,
+        "maxIndexedOrSolutionsReached": false,
+        "maxIndexedAndSolutionsReached": false,
+        "maxScansToExplodeReached": false,
+        "prunedSimilarIndexes": false,
+        "winningPlan": {
+          "isCached": false,
+          "stage": "PROJECTION_COVERED",
+          "transformBy": {
+            "_id": 1
+          },
+          "inputStage": {
+            "stage": "IXSCAN",
+            "nss": "n2_equipe10.fato_fornecedores",
+            "keyPattern": {
+              "geografia.regiaoId": 1,
+              "_id": 1
+            },
+            "indexName": "ix_regiao_fornecedor",
+            "isMultiKey": false,
+            "multiKeyPaths": {
+              "geografia.regiaoId": [],
+              "_id": []
+            },
+            "isUnique": false,
+            "isSparse": false,
+            "isPartial": false,
+            "indexVersion": 2,
+            "direction": "forward",
+            "indexBounds": {
+              "geografia.regiaoId": [
+                "[0, 0]"
+              ],
+              "_id": [
+                "[MinKey, MaxKey]"
+              ]
+            }
+          }
+        },
+        "rejectedPlans": []
+      },
+      "executionStats": {
+        "executionSuccess": true,
+        "nReturned": 21,
+        "executionTimeMillis": 0,
+        "executionTimeMicros": 334,
+        "totalKeysExamined": 21,
+        "totalDocsExamined": 0,
+        "executionStages": {
+          "isCached": false,
+          "stage": "PROJECTION_COVERED",
+          "nReturned": 21,
+          "executionTimeMillisEstimate": 0,
+          "works": 22,
+          "advanced": 21,
+          "needTime": 0,
+          "needYield": 0,
+          "saveState": 0,
+          "restoreState": 0,
+          "isEOF": 1,
+          "transformBy": {
+            "_id": 1
+          },
+          "inputStage": {
+            "stage": "IXSCAN",
+            "nReturned": 21,
+            "executionTimeMillisEstimate": 0,
+            "works": 22,
+            "advanced": 21,
+            "needTime": 0,
+            "needYield": 0,
+            "saveState": 0,
+            "restoreState": 0,
+            "isEOF": 1,
+            "nss": "n2_equipe10.fato_fornecedores",
+            "keyPattern": {
+              "geografia.regiaoId": 1,
+              "_id": 1
+            },
+            "indexName": "ix_regiao_fornecedor",
+            "isMultiKey": false,
+            "multiKeyPaths": {
+              "geografia.regiaoId": [],
+              "_id": []
+            },
+            "isUnique": false,
+            "isSparse": false,
+            "isPartial": false,
+            "indexVersion": 2,
+            "direction": "forward",
+            "indexBounds": {
+              "geografia.regiaoId": [
+                "[0, 0]"
+              ],
+              "_id": [
+                "[MinKey, MaxKey]"
+              ]
+            },
+            "keysExamined": 21,
+            "seeks": 1,
+            "dupsTested": 0,
+            "dupsDropped": 0,
+            "peakTrackedMemBytes": 0
+          }
+        }
+      },
+      "queryShapeHash": "AAFEECB043007F0530084FCEC91B8291F111274C37BAF57252BD555139533DD1",
+      "command": {
+        "find": "fato_fornecedores",
+        "filter": {
+          "geografia.regiaoId": 0
+        },
+        "projection": {
+          "_id": 1
+        },
+        "sort": {
+          "_id": 1
+        },
+        "$db": "n2_equipe10"
+      },
+      "serverInfo": {
+        "host": "LAPTOP-ATT32S7A",
+        "port": 27017,
+        "version": "9.0.4",
+        "gitVersion": "64ade602b836c9adeffba7fa038c887ffab56196"
+      },
+      "serverParameters": {
+        "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+        "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+        "internalQueryProhibitBlockingMergeOnMongoS": 0,
+        "internalQueryFrameworkControl": "trySbeRestricted",
+        "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+      },
+      "ok": 1.0
+    }
+  },
+  "limite": "Experimento auxiliar no recorte. Tempos incluem driver e transferência. Hints forçam caminhos de acesso; não comprovam superioridade de um SGBD nem benefício em agregações globais."
+}

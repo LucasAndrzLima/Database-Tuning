@@ -1,0 +1,7 @@
+{
+  "mysql": "Instância isolada MySQL 8.0.46 na porta local 33310. Dados em tmp/n2_runtime/mysql; conexão no .env local (não incluído no ZIP).",
+  "mongodb": "MongoDB nativo na porta 27017; escrita limitada ao banco n2_equipe10 e a bancos temporários dos testes.",
+  "docker": "Indisponível. Erros de inicialização de sockets dos serviços internos (Inference/Secrets Engine) e leitura de versão WSL.",
+  "acao_reversivel_docker": "Diretório de sockets run preservado em C:/Users/lucas_rqo8od/AppData/Local/Docker/run-n2-backup-20261028 durante diagnóstico. Nenhum volume ou banco Docker foi removido. A nova tentativa encontrou falha no Secrets Engine.",
+  "redash": "Não executado; requer ambiente Docker funcional ou instância da turma."
+}

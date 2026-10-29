@@ -1,0 +1,10 @@
+{
+  "id": "50b6faa336c44ffb946082d16f4aa53f",
+  "extraido_em_utc": "2026-10-29T01:08:44.885292+00:00",
+  "schema_mysql": "n2_equipe10_tpch",
+  "escopo": "Todos os fornecedores, países e regiões da origem. Sem filtro temporal e sem LIMIT.",
+  "fornecedores": 100,
+  "paises": 25,
+  "regioes": 5,
+  "sha256_projecao_origem": "cec1b7dee24da04207d9e3b37d3d943f5ff9a2fa242410e3f552cdf21ca43544"
+}

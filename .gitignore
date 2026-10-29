@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+.runtime/
+*.duckdb
+*.log
+redash_estado_local.json
